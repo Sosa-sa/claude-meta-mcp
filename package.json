@@ -4,7 +4,7 @@
   "description": "Self-hosted Meta connector for Claude — Streamable HTTP MCP server. Read Meta Ads data and read+write Facebook Page posts.",
   "license": "MIT",
   "author": "Markus Stöger <hi@markusstoeger.com> (https://markusstoeger.com)",
-  "homepage": "https://connector.markusstoeger.com",
+  "homepage": "https://markusstoeger.com/repos#claude-meta-mcp",
   "repository": {
     "type": "git",
     "url": "https://github.com/maxx3250/claude-meta-mcp.git"

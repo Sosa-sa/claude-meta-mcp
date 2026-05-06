@@ -3,6 +3,7 @@
 > Self-hosted Meta Ads (Facebook & Instagram) connector for Claude.
 > Bring your campaign data into Claude conversations — no SaaS middleman, no per-seat pricing, your tokens stay on your server.
 
+[![CI](https://github.com/maxx3250/claude-meta-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/maxx3250/claude-meta-mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![MCP](https://img.shields.io/badge/MCP-Streamable_HTTP-blue.svg)](https://modelcontextprotocol.io/)
 [![Status](https://img.shields.io/badge/status-v0.2_alpha-orange.svg)](./CHANGELOG.md)
@@ -124,9 +125,11 @@ See [`.env.example`](./.env.example).
 | Your data leaves your server | ✗ | ✓ | ✓ | ✗ |
 | Monthly fee | $0 | from $19 | from $29 | $0 |
 
+<sub>As of May 2026, based on each project's public README and pricing page. Names and trademarks belong to their respective owners; comparison is informational only.</sub>
+
 ---
 
-## Architecture (v0.1)
+## Architecture (v0.2)
 
 ```
 ┌─────────────────────┐     POST /mcp        ┌──────────────────────────┐
@@ -215,6 +218,14 @@ npm start         # node dist/index.js
 - Rotate `META_ACCESS_TOKEN` by revoking the System User token in Meta Business and minting a new one.
 
 If you find a security issue, please email `security@markusstoeger.com` instead of opening a public issue.
+
+---
+
+## Contributing
+
+PRs welcome. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for ground rules and
+[`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md). Security issues should follow
+[`SECURITY.md`](./SECURITY.md), not the public issue tracker.
 
 ---
 

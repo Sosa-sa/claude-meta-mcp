@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/maxx3250/claude-meta-mcp/security/advisories/new
+    about: Please report security issues privately via GitHub Security Advisories (or email security@markusstoeger.com).
+  - name: Question / discussion
+    url: https://github.com/maxx3250/claude-meta-mcp/discussions
+    about: For general questions, ideas, and usage help, please use Discussions.
