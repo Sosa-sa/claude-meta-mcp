@@ -82,8 +82,7 @@ async function main(): Promise<void> {
       meta_api_version: config.meta.apiVersion,
     });
   });
-
-  app.post("/mcp", async (req, res) => {
+ app.post("/mcp", async (req, res) => {
     const transport = new StreamableHTTPServerTransport({
       sessionIdGenerator: undefined,
       enableJsonResponse: true,
