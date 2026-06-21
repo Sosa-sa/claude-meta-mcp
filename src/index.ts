@@ -4,7 +4,7 @@
  *
  * Boots an Express server that exposes:
  *   - GET  /health        liveness probe
- *   - POST /mcp           MCP Streamable HTTP transport (Bearer-auth gated)
+ *   - POST /mcp           MCP Streamable HTTP transport
  *
  * v0.1 single-tenant: one shared Meta access token, one shared Bearer auth
  * token. Multi-tenant + OAuth 2.1 + DCR is planned for v0.2.
@@ -82,8 +82,9 @@ async function main(): Promise<void> {
       meta_api_version: config.meta.apiVersion,
     });
   });
- app.post("/mcp", async (req, res) => {
-    app.post("/mcp", async (req, res) => {
+
+  app.post("/mcp", async (req, res) => {
+    const transport = new StreamableHTTPServerTransport({
       sessionIdGenerator: undefined,
       enableJsonResponse: true,
     });
